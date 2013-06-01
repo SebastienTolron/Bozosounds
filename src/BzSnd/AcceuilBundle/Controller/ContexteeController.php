@@ -16,7 +16,7 @@ class ContexteeController extends Controller
     {
 		$menu = array();
 		$menu[] = array('titre' => 'Accueil','route' => 'bz_snd_accueil');
-
+                $menu[] = array('titre' => 'News','route' => 'bz_snd_news');
 		
         return $this->render(
 			'BzSndAcceuilBundle:Contextee:menu.html.twig',

@@ -1,3 +1,8 @@
+bz_snd_news:
+    resource: "@BzSndNewsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 bz_snd_acceuil:
     resource: "@BzSndAcceuilBundle/Controller/"
     type:     annotation

@@ -21,7 +21,7 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new BzSnd\AcceuilBundle\BzSndAcceuilBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
-		
+            new BzSnd\NewsBundle\BzSndNewsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
