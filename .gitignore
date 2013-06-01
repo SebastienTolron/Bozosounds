@@ -1,0 +1,35 @@
+# Kate files
+*~
+*.kate-swp
+*.kateproject
+.kateproject.d/
+
+# Eclipse files
+.project
+
+# Doxygen
+doxygen/*
+
+# Bootstrap
+app/bootstrap*
+
+# Composer
+composer.lock
+
+# Symfony directories
+vendor/*
+*/logs/*
+*/cache/*
+web/uploads/*
+web/bundles/*
+bin/*
+
+# Sonata Images
+#web/images/equipes/*
+#web/images/news/*
+#web/images/partenaires/*
+
+# Configuration files
+app/config/parameters.ini
+app/config/parameters.yml
+
