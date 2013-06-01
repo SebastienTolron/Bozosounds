@@ -1,0 +1,4 @@
+bz_snd_acceuil:
+    resource: "@BzSndAcceuilBundle/Controller/"
+    type:     annotation
+    prefix:   /

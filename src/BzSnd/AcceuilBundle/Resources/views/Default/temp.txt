@@ -1,0 +1,12 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Accueil{% endblock %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('bundles/bzsndaccueil/css/accueil.css') }}" />
+
+<link rel="stylesheet" href="{{ asset('bundles/bzsndaccueil/css/default/default.css') }}" type="text/css" media="screen" />
+{# <link rel="stylesheet" href="{{ asset('bundles/bzsndaccueil/css/style.css') }}" type="text/css" media="screen" /> #}
+{% endblock %}
+

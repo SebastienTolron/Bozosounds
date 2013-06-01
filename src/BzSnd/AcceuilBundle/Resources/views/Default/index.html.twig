@@ -1,0 +1,18 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}{{ parent() }} - Accueil{% endblock %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset('bundles/Bzndaccueil/css/accueil.css') }}" />
+{% endblock %}
+
+{% block zone_contenu %}
+
+<h1> Bienvenue sur la page D'acceuil du site <h2>
+
+<p> Ceci est ma page d'acceuil , Elle est actuellement en construction </p>
+
+<img src="{{ asset('images/construction.jpg') }}" alt="En Construction !" width="600" />
+
+{% endblock %}

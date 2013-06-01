@@ -1,0 +1,67 @@
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+<!--[if IE]>
+<link rel="stylesheet" href="{{ asset('css/ie.css') }}" />
+<![endif]-->
+{% endblock %}
+{% block body %}
+
+    <div id="designBzSnd_corps">
+        <header>
+            <div id="designBzSnd_header">
+                {% block header %}
+                <h1><a href="{{ path('bz_snd_accueil') }}" title="Accueil"><img src="{{ asset('images/banniere_bozosounds.png') }}" alt="Bozosounds" /></a></h1>
+                <div id="designBzSnd_menu">
+                    <nav>
+						{% render controller("BzSndAcceuilBundle:Contextee:menu") %} 
+                    </nav>
+                </div>
+                {% endblock %}
+            </div>
+        </header>
+        <div id="designBzSnd_global">
+    {% block corps %}
+			<div id="designBzSnd_zones">
+		{% block zone_corps %}
+				<div id="designBzSnd_zone_gauche">
+				{# 
+					<section>
+						{% block zone_gauche %}
+						{% render controller("CshbEquipeBundle:Menu:informations") %}
+						{% render controller("CshbAccueilBundle:Contexte:informations") %}
+						{% endblock %}
+					</section>
+						#} 
+				</div>
+				<div id="designBzSnd_zone_droite">  
+				{# 				
+					<section>
+						{% block zone_droite %}
+						{% render controller("CshbAccueilBundle:Contexte:login") %}
+						{% endblock %}
+					</section>
+					#} 
+				</div>
+				<div id="designBzSnd_zone_contenu">
+					<section>
+							{% block zone_contenu %}{% endblock %}
+					</section>
+				</div>
+         {% endblock %}
+			</div>
+    {% endblock %}
+			<footer>
+				<div id="designBzSnd_footer">
+				{#
+					{% block footer %}
+					{% render controller("CshbPartenaireBundle:Contexte:basPage") %}
+					{% endblock %}
+					#} 
+				</div>
+			</footer>
+        </div>
+    </div>
+
+{% endblock %}

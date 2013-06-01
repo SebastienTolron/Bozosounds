@@ -33,3 +33,5 @@ bin/*
 app/config/parameters.ini
 app/config/parameters.yml
 
+# Other files
+ImportantFiles/*
