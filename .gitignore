@@ -35,3 +35,4 @@ app/config/parameters.yml
 
 # Other files
 ImportantFiles/*
+/nbproject/private/

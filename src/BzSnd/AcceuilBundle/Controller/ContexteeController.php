@@ -25,5 +25,23 @@ class ContexteeController extends Controller
 			)
 		);
     }
+    
+    
+    	/**
+	* Méthode informationsAction
+	*/
+	public function informationsAction() {
+
+		return $this->render(
+			'BzSndAcceuilBundle:Contextee:informations.html.twig'
+		);
+	}
+        
+        public function basAction() {
+
+		return $this->render(
+			'BzSndAcceuilBundle:Contextee:bas.html.twig'
+		);
+	}
 
 }
