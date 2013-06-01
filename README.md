@@ -1,4 +1,5 @@
-Bozosounds
-==========
+Bozosounds website 
+========================
 
-Site web BozoSounds
+Développement du site Web Bozosounds. Utilisation de symfony2
+
