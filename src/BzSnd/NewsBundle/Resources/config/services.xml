@@ -2,19 +2,16 @@
 
 <container xmlns="http://symfony.com/schema/dic/services"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-
-    <!--
-    <parameters>
-        <parameter key="bz_snd_news.example.class">BzSnd\NewsBundle\Example</parameter>
-    </parameters>
-
+    xsi:schemaLocation="http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="bz_snd_news.example" class="%bz_snd_news.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
-        </service>
-    </services>
-    -->
+       <service id="sonata.admin.news" class="BzSnd\NewsBundle\Admin\NewsAdmin">
+          <tag name="sonata.admin" manager_type="orm" group="Contenu" label="News"/>
+          <argument />
+          <argument>BzSnd\NewsBundle\Entity\News</argument>
+          <argument>SonataAdminBundle:CRUD</argument>
+          <call method="setTranslationDomain">
+              <argument>BzSndNewsBundle</argument>
+          </call>
+      </service>
+   </services>
 </container>

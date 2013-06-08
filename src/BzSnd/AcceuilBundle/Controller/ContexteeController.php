@@ -17,6 +17,7 @@ class ContexteeController extends Controller
 		$menu = array();
 		$menu[] = array('titre' => 'Accueil','route' => 'bz_snd_accueil');
                 $menu[] = array('titre' => 'News','route' => 'bz_snd_news');
+                $menu[] = array('titre' => 'Musique','route' => 'bz_snd_music');
 		
         return $this->render(
 			'BzSndAcceuilBundle:Contextee:menu.html.twig',
@@ -41,6 +42,15 @@ class ContexteeController extends Controller
 
 		return $this->render(
 			'BzSndAcceuilBundle:Contextee:bas.html.twig'
+		);
+	}
+        
+               
+        
+        public function contactAction() {
+
+		return $this->render(
+			'BzSndAcceuilBundle:Contextee:contact.html.twig'
 		);
 	}
 

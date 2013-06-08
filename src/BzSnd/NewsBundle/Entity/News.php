@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * News
  *
- * @ORM\Table()
+ * @ORM\Table(name= "news")
  * @ORM\Entity(repositoryClass="BzSnd\NewsBundle\Entity\NewsRepository")
  */
 class News
@@ -38,14 +38,14 @@ class News
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="createdAt", type="date")
+     * @ORM\Column(name="createdAt", type="date",nullable=true)
      */
     private $createdAt;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="modif", type="text")
+     * @ORM\Column(name="modif", type="text", nullable=true)
      */
     private $modif;
 

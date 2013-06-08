@@ -22,6 +22,15 @@ class AppKernel extends Kernel
             new BzSnd\AcceuilBundle\BzSndAcceuilBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
             new BzSnd\NewsBundle\BzSndNewsBundle(),
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+           
+            new BzSnd\UserBundle\BzSndUserBundle(),
+            new BzSnd\MusicBundle\BzSndMusicBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

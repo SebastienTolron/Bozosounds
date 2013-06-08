@@ -4,6 +4,7 @@ imports:
 
 framework:
     #esi:             ~
+    translator: ~
     #translator:      { fallback: %locale% }
     secret:          %secret%
     router:
@@ -70,3 +71,34 @@ vich_uploader:
         news_image:
             uri_prefix: /images/news
             upload_destination: %kernel.root_dir%/../web/images/news
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+
+        sonata.block.service.text: ~
+        sonata.block.service.rss: ~
+
+sonata_admin:
+    title:      Panneau d'administration
+    templates:
+        # default global templates
+        layout:  SonataAdminBundle::standard_layout.html.twig
+        ajax:    SonataAdminBundle::ajax_layout.html.twig
+
+        # default actions templates, should extend a global templates
+        list:    SonataAdminBundle:CRUD:list.html.twig
+        show:    SonataAdminBundle:CRUD:show.html.twig
+        edit:    SonataAdminBundle:CRUD:edit.html.twig
+
+    dashboard:
+        blocks:
+            # display a dashboard block
+            - { position: left, type: sonata.admin.block.admin_list }
+
+fos_user:
+    db_driver: orm 
+    firewall_name: main
+    user_class: BzSnd\UserBundle\Entity\User

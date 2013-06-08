@@ -1,6 +1,10 @@
 /*
  * Général
  */
+
+html {
+    height : 100%;
+}
 body {
     height:100%;
     margin:0px;
@@ -88,7 +92,9 @@ div#designBzSnd_header ul a{
 	color: #fff;
 	text-decoration: none;
 }
-
+div#designBzSnd_header nav{
+	height:50px;
+}
 div#designBzSnd_header h1 img{
 	display: inline-block;
 	vertical-align: bottom;
@@ -136,6 +142,7 @@ div#designBzSnd_header h1{
 	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 }
 
+
 div#designBzSnd_menu{
 	background: #000;
 	z-index: 3;
@@ -147,6 +154,8 @@ div#designBzSnd_menu{
 	display: inline-block;
 	padding: 5px 10px;
 	margin: 0px;
+        font-size: 27px;
+        font-family:calibri;
 	float: left; /* IE */
 }
 
@@ -170,18 +179,19 @@ div#designBzSnd_menu a {
 
 div#designBzSnd_global{
 	background-color: #fff;
-	width: 80%;
+	width: 85%;
+        min-height:800px;
         height:100%;
-	position: relative;
-	z-index: 2;        
-	margin: 0px auto;
-	box-shadow: 1px 1px 12px black;
+	position: relative; 
+	margin: auto auto;
+	box-shadow: 1px 40px 100px black;
 }
 
 div#designBzSnd_zones{
 	clear: both;
         margin-bottom: 0px;
           padding-top: 0px;
+          height:100%;
 }
 
 div#designBzSnd_zone_gauche{
@@ -214,6 +224,8 @@ div#designBzSnd_zone_droite a:hover, div#designBzSnd_zone_gauche a:hover{
 
 div#designBzSnd_footer{
     
+        position:fixed;
+        bottom:0;
 	width: 100%;
         height:45px;
 	text-align: center;
