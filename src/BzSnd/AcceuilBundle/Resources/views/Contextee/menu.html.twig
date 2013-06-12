@@ -5,4 +5,67 @@
 	<li><a href="{{ path(element['route']) }}" title="{{ element['titre'] }}">{{ element['titre'] }}</a></li>
 {% endfor %}
 
+           <!--  <p id="BtnCmpt" > <input  class="trigger account-trigger"  type="button" value="Mon compte" /></p> -->
 </ul>
+
+
+
+
+<script type="text/javascript" src="{{ asset('bundles/bzsndacceuil/js/jquery-1.9.1.js') }}"></script>
+<script type="text/javascript">
+
+ myWindows = ['account','warning','error','success'];
+ isActiveAccount = 0;
+    function hideAllWindow()
+{
+		
+	 
+				  $('.account').css('bottom',-250 ); //move element outside viewport	  
+ }
+
+function showWindow(type)
+{
+	$('.'+ type +'-trigger').click(function(){
+		  hideAllWindow();				  
+		  $('.'+type).animate({bottom:"0"}, 500);
+	});
+}
+
+$(document).ready(function(){
+		 
+		 // Initially, hide them all
+		 hideAllWindow();
+		 
+		 // Show message
+		 for(var i=0;i<myWindows.length;i++)
+		 {
+			showWindow(myWindows[i]);
+		 }
+		 
+		 // When message is clicked, hide it
+                 if ( isActiveAccount == 0)
+                     {
+                         isActiveAccount = 1;
+		 $('.account').click(function(){			  
+				  $(this).animate({top: -$(this).outerHeight()}, 500);
+                                  
+		  });	
+                     }
+                  else
+                      {
+                          isActiveAccount = 0;
+                           $('.account').click(function(){			  
+				  $(this).css('bottom',-250 );
+		  });	
+                      }
+		 
+});  
+    
+</script>
+
+
+<div class="account window">
+		
+    
+   <p> test </p>
+</div>

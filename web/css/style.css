@@ -81,6 +81,15 @@ margin-left: 10px;
 /*
  * Header
  */
+
+div#designBzSnd_header {
+    
+        position:fixed;
+        top:0;
+	width: 100%;
+        height:55px;
+        z-index: 30;
+}
 div#designBzSnd_header ul{
 	width: 985px;
 	margin: 0px auto;
@@ -91,9 +100,17 @@ div#designBzSnd_header ul{
 div#designBzSnd_header ul a{
 	color: #fff;
 	text-decoration: none;
+        font-family: Blippo, fantasy;
+        font-variant: small-caps;
+        margin: auto 25px;
+        font-size: 28px;
+       
+           
 }
 div#designBzSnd_header nav{
-	height:50px;
+	height:55px;
+        margin-left : 50px;
+        
 }
 div#designBzSnd_header h1 img{
 	display: inline-block;
@@ -143,12 +160,90 @@ div#designBzSnd_header h1{
 }
 
 
+/*
+ * Menu 
+ */
+
+
+
 div#designBzSnd_menu{
-	background: #000;
-	z-index: 3;
+	
+	
 	position: relative;
-	box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+	box-shadow: 0px 3px 5px rgba(0,0,0,1.8);
+        
+        /* Anciens navigateurs */
+
+    
+
+    -o-background-size: 100% 100%;
+
+    -moz-background-size: 100% 100%;
+
+    -webkit-background-size: 100% 100%;
+
+    background-size: 100% 100%;
+
+    /* Navigateurs récents */
+
+    background: -webkit-gradient(
+
+        linear,
+
+        left top, left bottom,
+
+        from(#000000),
+
+        to(#2E2E2E)
+
+    );
+
+    background: -webkit-linear-gradient(
+
+        top,
+
+        #000000,
+
+        #2E2E2E
+
+    );
+
+    background: -moz-linear-gradient(
+
+        top,
+
+        #000000,
+
+        #2E2E2E
+
+    );
+
+    background: -o-linear-gradient(
+
+       top,
+
+        #000000,
+
+        #2E2E2E
+
+    );
+
+    background: linear-gradient(
+
+        top,
+
+        #000000,
+
+        #2E2E2E
+
+    );
+
 }
+
+        
+        
+        
+
 
 #designBzSnd_menu ul li{
 	display: inline-block;
@@ -179,18 +274,19 @@ div#designBzSnd_menu a {
 
 div#designBzSnd_global{
 	background-color: #fff;
-	width: 85%;
+	width: 70%;
         min-height:800px;
         height:100%;
 	position: relative; 
 	margin: auto auto;
+      
 	box-shadow: 1px 40px 100px black;
 }
 
 div#designBzSnd_zones{
 	clear: both;
         margin-bottom: 0px;
-          padding-top: 0px;
+          padding-top: 50px;
           height:100%;
 }
 
@@ -222,29 +318,107 @@ div#designBzSnd_zone_droite a:hover, div#designBzSnd_zone_gauche a:hover{
 	color: #55f;
 }
 
+
+
+/*
+ * footer
+ */
+
+
+
 div#designBzSnd_footer{
     
-        position:fixed;
-        bottom:0;
+
 	width: 100%;
-        height:45px;
-	text-align: center;
+        height:200px;
+	bottom:0px;
+        z-index:20;
         color:white;
-	background: black;
+	
         margin-top: 0px;
         padding-top: 0px;
-}
-.partenaire{
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 25px;
-	padding-right: 25px;
+        
+        -o-background-size: 100% 100%;
+
+    -moz-background-size: 100% 100%;
+
+    -webkit-background-size: 100% 100%;
+
+    background-size: 100% 100%;
+
+    /* Navigateurs récents */
+
+    background: -webkit-gradient(
+
+        linear,
+
+        left top, left bottom,
+
+        from(#2E2E2E),
+
+        to(#000000)
+
+    );
+
+    background: -webkit-linear-gradient(
+
+        top,
+
+        #2E2E2E,
+
+        #000000
+
+    );
+
+    background: -moz-linear-gradient(
+
+        top,
+
+        #2E2E2E,
+
+        #000000
+
+    );
+
+    background: -o-linear-gradient(
+
+       top,
+
+        #2E2E2E,
+
+        #000000
+
+    );
+
+    background: linear-gradient(
+
+        top,
+
+        #2E2E2E,
+
+        #000000
+
+    );
+
+    
+    
 }
 
+#BtnCmpt
+{
+    text-align:right;
+    margin-right:15%;
+   padding-bottom: 10px;
+   
+}
+
+
+
+/* Zone contenu */
 
 div#designBzSnd_zone_contenu{
 /*     background: #fff; */
-    margin: 0px 80px ;
+    margin: 40px 80px ;
    
 }
 
@@ -294,7 +468,64 @@ form div{
 
 #ParentDig
 {
-margin-left:30px;
+margin-left:0px;
 
 
+}
+
+/* css pour les pop up */
+
+.window{
+                margin-top:45px;
+		background-size: 40px 40px;
+		background-image: linear-gradient(135deg, rgba(255, 255, 255, .05) 25%, transparent 25%,
+							transparent 50%, rgba(255, 255, 255, .05) 50%, rgba(255, 255, 255, .05) 75%,
+							transparent 75%, transparent);										
+		 box-shadow: inset 0 -1px 0 rgba(255,255,255,.4);
+		 width: 25%;
+		 border: 0px solid;
+		 color: #fff;
+		 padding: 15px;
+		 position: fixed;
+                 
+		 _position: absolute;
+		 text-shadow: 0 1px 0 rgba(0,0,0,.5);
+		 animation: animate-bg 5s linear infinite;
+}
+
+.account{
+		 background-color: black;
+		 border-color: #3b8eb5;
+}
+
+.error{
+		 background-color: #de4343;
+		 border-color: #c43d3d;
+}
+		 
+.warning{
+		 background-color: #eaaf51;
+		 border-color: #d99a36;
+}
+
+.success{
+		 background-color: #61b832;
+		 border-color: #55a12c;
+}
+
+.message h3{
+		 margin: 0 0 5px 0;													 
+}
+
+.message p{
+		 margin: 0;													 
+}
+
+@keyframes animate-bg {
+    from {
+        background-position: 0 100;
+    }
+    to {
+       background-position: 80px 0;
+    }
 }
