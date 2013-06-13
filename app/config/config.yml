@@ -102,3 +102,13 @@ fos_user:
     db_driver: orm 
     firewall_name: main
     user_class: BzSnd\UserBundle\Entity\User
+    registration:
+        form:
+            type: bzsnd_user_registration
+
+services:
+    bzsnd_user.registration.form.type:
+        class: BzSnd\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: bzsnd_user_registration }

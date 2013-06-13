@@ -40,7 +40,9 @@
 				 				
 					<section>
 						{% block zone_droite %}
-						{% render controller("BzSndAcceuilBundle:Contextee:contact") %}
+						{% render controller("BzSndAcceuilBundle:Contextee:exemple1") %}
+                                                
+                                               {% render controller("BzSndAcceuilBundle:Contextee:exemple2") %}
 						{% endblock %}
 					</section>
 					 
@@ -50,13 +52,18 @@
 							{% block zone_contenu %}{% endblock %}
 					</section>
 				</div>
+                                
+                                
          {% endblock %}
 			</div>
     {% endblock %}
-		
-       
+	
+ 
    </div>
-	<footer>
+	   
+	
+  </div>
+   <footer>
 				<div id="designBzSnd_footer">
 				
 					{% block footer %}
@@ -65,6 +72,4 @@
 					 
 				</div>
 			</footer>
-
-  </div>
 {% endblock %}
