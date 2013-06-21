@@ -1,12 +1,13 @@
 
 
-<ul>
+
 {% for element in menu %}
-	<li><a href="{{ path(element['route']) }}" title="{{ element['titre'] }}">{{ element['titre'] }}</a></li>
+        
+	<br> <span  id="lienMenu" > <a  href="{{ path(element['route']) }}" title="{{ element['titre'] }}"> <p> {{ element['titre'] }}</p></a> </span>
 {% endfor %}
 
            <!--  <p id="BtnCmpt" > <input  class="trigger account-trigger"  type="button" value="Mon compte" /></p> -->
-</ul>
+
 
 
 

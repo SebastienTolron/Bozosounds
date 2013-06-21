@@ -8,19 +8,22 @@
 {% endblock %}
 {% block body %}
 
-    <div id="designBzSnd_corps">
-        <header>
-            <div id="designBzSnd_header">
-                {% block header %}
-                <div id="designBzSnd_menu">
-                    <nav>
+  <div id="designBzSnd_menu">
+                 
 						{% render controller("BzSndAcceuilBundle:Contextee:menu") %} 
-                    </nav>
+                   
                 </div>
-                {% endblock %}
-            </div>
-        </header>
+
+
+    <div id="designBzSnd_corps">
+      
+          
         <div id="designBzSnd_global">
+            
+            
+          
+            
+            
     {% block corps %}
 			<div id="designBzSnd_zones">
 		{% block zone_corps %}
@@ -36,22 +39,16 @@
 						
 				</div>
                                  #} 
-				<div id="designBzSnd_zone_droite">  
-				 				
-					<section>
-						{% block zone_droite %}
-						{% render controller("BzSndAcceuilBundle:Contextee:exemple1") %}
-                                                
-                                               {% render controller("BzSndAcceuilBundle:Contextee:exemple2") %}
-						{% endblock %}
-					</section>
-					 
-				</div>
-				<div id="designBzSnd_zone_contenu">
+				
+				
+                          
+                              
+                              
+                              <div id="designBzSnd_zone_contenu" style="display: none;">
 					<section>
 							{% block zone_contenu %}{% endblock %}
 					</section>
-				</div>
+                            </div>
                                 
                                 
          {% endblock %}
@@ -63,13 +60,5 @@
 	   
 	
   </div>
-   <footer>
-				<div id="designBzSnd_footer">
-				
-					{% block footer %}
-					{% render controller("BzSndAcceuilBundle:Contextee:bas") %}
-					{% endblock %}
-					 
-				</div>
-			</footer>
+
 {% endblock %}

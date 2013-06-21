@@ -4,6 +4,16 @@
 
 html {
     height : 100%;
+    margin:0;
+    padding:0;
+    background : url('../images/2.jpg') no-repeat center fixed;
+     -webkit-background-size: 
+         cover;
+     -moz-background-size: 
+         cover;
+     -o-background-size:
+         cover;
+     background-size: cover;
 }
 body {
     height:100%;
@@ -11,35 +21,7 @@ body {
     padding:0px;
     font-size:12px;
     font-family:Arial,Verdana,sans-serif;
-	background-color: black;
-	background-image: -webkit-linear-gradient(
-		left,
-		#BDBDBD,
-		#585858 25%,
-		#585858 75%,
-		#BDBDBD
-	);
-	background-image: -moz-linear-gradient(
-		left,
-		#BDBDBD,
-		#585858 25%,
-		#585858 75%,
-		#BDBDBD
-	);
-	background-image: -o-linear-gradient(
-		left,
-		#BDBDBD,
-		#585858 25%,
-		#585858 75%,
-		#BDBDBD
-	);
-	background-image: linear-gradient(
-		left,
-		#BDBDBD,
-		#585858 25%,
-		#585858 75%,
-		#BDBDBD
-	);
+	
 }
 
 img{
@@ -78,87 +60,6 @@ th, td{
 margin-left: 10px;
 }
 
-/*
- * Header
- */
-
-div#designBzSnd_header {
-    
-        position:fixed;
-        top:0;
-	width: 100%;
-        height:55px;
-        z-index: 30;
-}
-div#designBzSnd_header ul{
-	width: 985px;
-	margin: 0px auto;
-	display: block;
-	padding: 5px;
-}
-
-div#designBzSnd_header ul a{
-	color: #fff;
-	text-decoration: none;
-        font-family: Blippo, fantasy;
-        font-variant: small-caps;
-        margin: auto 25px;
-        font-size: 28px;
-       
-           
-}
-div#designBzSnd_header nav{
-	height:55px;
-        margin-left : 50px;
-        
-}
-div#designBzSnd_header h1 img{
-	display: inline-block;
-	vertical-align: bottom;
-	background-color: #fe5;
-	padding: 10px;
-	margin-top: 10px;
-	box-shadow: 0px 0px 100px 100px #fe5;
-	z-index: 1;
-	position: relative;
-}
-
-div#designBzSnd_header h1{
-	min-height: 100px;
-	text-align: center;
-	margin: 0px;
-	background-image: url('../images/back_arrow_to_menu.png'), url('../images/back_arrow_left.png'), url('../images/back_logos.png'), -webkit-linear-gradient(
-		left,
-		#ed1,
-		#fe5 25%,
-		#fe5 75%,
-		#ed1
-	);
-	background-image: url('../images/back_arrow_to_menu.png'), url('../images/back_arrow_left.png'), url('../images/back_logos.png'), -moz-linear-gradient(
-		left,
-		#ed1,
-		#fe5 25%,
-		#fe5 75%,
-		#ed1
-	);
-	background-image: url('../images/back_arrow_to_menu.png'), url('../images/back_arrow_left.png'), url('../images/back_logos.png'), -o-linear-gradient(
-		left,
-		#ed1,
-		#fe5 25%,
-		#fe5 75%,
-		#ed1
-	);
-	background-image: url('../images/back_arrow_to_menu.png'), url('../images/back_arrow_left.png'), url('../images/back_logos.png'), linear-gradient(
-		left,
-		#ed1,
-		#fe5 25%,
-		#fe5 75%,
-		#ed1
-	);
-	background-position: 80px bottom, top left;
-	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-}
-
 
 /*
  * Menu 
@@ -168,10 +69,11 @@ div#designBzSnd_header h1{
 
 div#designBzSnd_menu{
 	
-	
-	position: relative;
-	box-shadow: 0px 3px 5px rgba(0,0,0,1.8);
-        
+	position:fixed;
+        left:0;	
+	box-shadow: 0px 3px 5px rgba(0,0,0,1.8);        
+        height:100%;
+        width:10%;
         /* Anciens navigateurs */
 
     
@@ -245,42 +147,44 @@ div#designBzSnd_menu{
         
 
 
-#designBzSnd_menu ul li{
-	display: inline-block;
-	padding: 5px 10px;
-	margin: 0px;
-        font-size: 27px;
-        font-family:calibri;
-	float: left; /* IE */
-}
 
-#designBzSnd_menu ul{
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	min-height: 2em;
-}
+
+
 
 div#designBzSnd_menu a {
-    display:block;
-    padding: 0;
+
     color: #fff;
+    font-size:30px;
     text-decoration: none;
+    margin-top:200px;
+    padding-top:100px
+   
 }
+
+
+div#designBzSnd_menu a p {
+
+ 
+    margin-top:10%;
+
+   
+}
+
+
 
 /**
  * Zones
  */
 
 div#designBzSnd_global{
-	background-color: #fff;
+	
 	width: 70%;
         min-height:800px;
         height:100%;
 	position: relative; 
 	margin: auto auto;
       
-	box-shadow: 1px 40px 100px black;
+
 }
 
 div#designBzSnd_zones{
@@ -290,119 +194,8 @@ div#designBzSnd_zones{
           height:100%;
 }
 
-div#designBzSnd_zone_gauche{
-    float: left;
-	background-color: #fff;
-
-}
-div#designBzSnd_zone_gauche li{
-	list-style-type: none;
-}
-div#designBzSnd_zone_gauche ul{
-	padding-left: 0.5em;
-	margin: 2px 0px;
-}
-div#designBzSnd_zone_droite{
-	border-left: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-    float: right;
-	width: 200px;
-	background-color: #fff;
-}
-div#designBzSnd_zone_droite a, div#designBzSnd_zone_gauche a{
-	text-decoration: none;
-	color: #08a;
-}
-div#designBzSnd_zone_droite a:hover, div#designBzSnd_zone_gauche a:hover{
-	text-decoration: none;
-	color: #55f;
-}
 
 
-
-/*
- * footer
- */
-
-
-
-div#designBzSnd_footer{
-    
-
-	width: 100%;
-        height:200px;
-	bottom:0px;
-        z-index:20;
-        color:white;
-	
-        margin-top: 0px;
-        padding-top: 0px;
-        
-        -o-background-size: 100% 100%;
-
-    -moz-background-size: 100% 100%;
-
-    -webkit-background-size: 100% 100%;
-
-    background-size: 100% 100%;
-
-    /* Navigateurs récents */
-
-    background: -webkit-gradient(
-
-        linear,
-
-        left top, left bottom,
-
-        from(#2E2E2E),
-
-        to(#000000)
-
-    );
-
-    background: -webkit-linear-gradient(
-
-        top,
-
-        #2E2E2E,
-
-        #000000
-
-    );
-
-    background: -moz-linear-gradient(
-
-        top,
-
-        #2E2E2E,
-
-        #000000
-
-    );
-
-    background: -o-linear-gradient(
-
-       top,
-
-        #2E2E2E,
-
-        #000000
-
-    );
-
-    background: linear-gradient(
-
-        top,
-
-        #2E2E2E,
-
-        #000000
-
-    );
-
-    
-    
-}
 
 #BtnCmpt
 {
@@ -417,8 +210,9 @@ div#designBzSnd_footer{
 /* Zone contenu */
 
 div#designBzSnd_zone_contenu{
-/*     background: #fff; */
+    background: #fff; 
     margin: 40px 80px ;
+    text-align: center;
    
 }
 

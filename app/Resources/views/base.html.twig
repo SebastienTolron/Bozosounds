@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+     <script type="text/javascript" src="{{ asset('bundles/bzsndacceuil/js/jquery-1.9.1.js') }}"></script>   
+        <script type="text/javascript">
+
+   $(document).ready(function(){
+           $("#designBzSnd_zone_contenu").fadeIn(2000);
+   });
+   
+   $("#lienMenu").click(function(){
+        alert("test");
+        $("#designBzSnd_zone_contenu").fadeOut(2000, function(){
+
+	   $("a").attr('href',$("a").attr('href'));
+	});
+   });
+
+</script>
+
+
         <meta charset="UTF-8" />
         <title>{% block title %} BozoSounds Studio {% endblock %}</title>
         {% block stylesheets %}{% endblock %}
